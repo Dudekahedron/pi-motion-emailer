@@ -11,6 +11,8 @@ def newest():
 	newest = max(glob.iglob(os.path.join('/media/pi/EXTSD/Security','*.jpg')),key=os.path.getctime)
 	return newest
 #instructions to send email with attachment if a new file is found
+fromaddr="sender email"
+toaddr="reciever email"
 msg=MIMEMultipart()
 msg['From']=fromaddr
 msg['To']=toaddr
