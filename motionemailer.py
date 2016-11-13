@@ -11,7 +11,7 @@ while True:
 	cur=current()
 	while True:
 		new=newest()
-		if new==current:
+		if new==cur:
 			time.sleep(0.1)
 			print('these files are identical')
 		else:
