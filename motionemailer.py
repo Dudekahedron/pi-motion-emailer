@@ -10,6 +10,7 @@ def newest():
 while True:
 	cur=current()
 	while True:
+		new=newest()
 		if new==current:
 			time.sleep(0.1)
 			print('these files are identical')
